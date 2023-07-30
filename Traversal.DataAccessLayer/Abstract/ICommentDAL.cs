@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Traversal.EntityLayer.Concrete;
+
+namespace Traversal.DataAccessLayer.Abstract
+{
+    public interface ICommentDAL : IRepositoryDAL<Comment>
+    {
+        public List<Comment> GetListCommentWithDestination();
+        public List<Comment> GetListCommentWithDestinationAndUser(int id);
+    }
+}
